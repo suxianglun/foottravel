@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/activity_title"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/blue4"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/height_48"
+            android:background="@color/white"
+            cardCornerRadius="4dp"
+            cardMaxElevation="1dp"
+            cardElevation="1dp"
+            android:layout_marginLeft="@dimen/height_20"
+            android:layout_marginRight="@dimen/height_20"
+            android:layout_height="380dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_user_logo"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@mipmap/ic_head"/>
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/iv_user_logo"
+                    android:text="波波"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_mailbox"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_10"
+                    android:layout_below="@+id/tv_username"
+                    android:text="bobo***@163.com"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/iv_my_code_logo"
+                    android:layout_below="@+id/tv_mailbox"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/height_20"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@mipmap/ic_head"/>
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/height_15"
+                    android:text="@string/scan_scan_add_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

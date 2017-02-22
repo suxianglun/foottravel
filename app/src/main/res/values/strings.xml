@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">足下旅行</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hsacn_codeello_blank_fragment">Hello blank fragment</string>
+    <!--首页-->
+    <string name="home_page">首页</string>
+    <string name="navigation">目的地</string>
+    <string name="special_service">特色服务</string>
+    <string name="mine">我的</string>
+
+    <string name="tip">提示</string>
+    <string name="cancel">取消</string>
+    <!--权限处理-->
+    <string name="premise_camera">照相机权限已关闭，请到手机设置里打开</string>
+    <string name="no_sdcard">无法保存照片，请检查SD卡是否挂载</string>
+    <string name="permission_request">权限请求</string>
+    <string name="permission_camera_message">足下使用照相机权限完成扫描功能。请在设置中开启权限，以正常登录</string>
+    <string name="go_set">去设置</string>
+
+    <string name="ad"></string>
+    <string name="scan_code">扫码</string>
+    <string name="pay_code">付款码</string>
+    <string name="finance_redpacket">理财红包</string>
+    <string name="bill">账单</string>
+
+
+    <string name="add_friends">添加朋友</string>
+    <string name="scan_scan">扫一扫</string>
+    <string name="my_qrcode">我的二维码</string>
+
+    <!--收款-->
+    <string name="receipt">收款</string>
+    <string name="set_money">设置金额</string>
+    <string name="zxwk_safe_pay">中信网科安全支付</string>
+    <string name="add_friend_pay">无需加好友，扫二维码向我付钱</string>
+    <string name="scan_scan_add_friend">扫一扫上面的二维码图案，加为好友</string>
+    <!--付款-->
+    <string name="account_money">账户余额，</string>
+    <string name="changer">更换</string>
+    <string name="pay">付款</string>
+    <string name="auto_update">每分钟自动更新</string>
+    <string name="card_string">Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation. This momentous decree came as a great beacon light of hope to millions of Negro slaves who had been seared in the flames of withering injustice.</string>
+
+    <string name="more">更多</string>
+    <!--我的-->
+    <string name="my_download">我的下载</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="my_order">我的订单</string>
+    <string name="my_coupon">我的优惠券</string>
+
+    <string name="my_voice_guide">语音导游</string>
+    <string name="my_writing">我的写作</string>
+
+    <string name="safe_center">安全中心</string>
+    <!--登录-->
+    <string name="login">登录</string>
+    <string name="phone_num">手机号码</string>
+    <string name="login_pwd">登录密码</string>
+    <string name="forget_pwd">忘记密码</string>
+    <!--注册-->
+    <string name="register">注册</string>
+    <string name="get_code">获取验证码</string>
+    <string name="verify_code">验证码</string>
+    <string name="notify_mes">"请输入正确的手机号！"</string>
+
+    <string name="no_data">"暂无数据"</string>
+    <!--切换城市-->
+    <string name="change_city">"切换城市"</string>
+
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@mipmap/bg_main_popupwindow"
+    android:divider="@drawable/bg_line_white"
+    android:showDividers="middle"
+    android:dividerPadding="@dimen/height_5"
+    android:padding="@dimen/height_5"
+    android:layout_height="wrap_content">
+    <!--添加朋友-->
+    <LinearLayout
+        android:id="@+id/ll_add_friends"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/height_15"
+        android:layout_marginRight="@dimen/height_15"
+        android:layout_marginTop="@dimen/height_8"
+        android:padding="@dimen/height_5"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_add_friends"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_main_user"/>
+        <TextView
+            android:id="@+id/tv_add_friends"
+            android:textColor="@color/white"
+            android:text="@string/add_friends"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_18"
+            android:layout_marginLeft="@dimen/height_15"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--扫一扫-->
+    <LinearLayout
+        android:id="@+id/ll_scan_scan"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/height_15"
+        android:layout_marginRight="@dimen/height_15"
+        android:padding="@dimen/height_5"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_scan_scan"
+            android:layout_width="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="25dp"
+            android:src="@mipmap/ic_scan_scan"/>
+        <TextView
+            android:id="@+id/tv_scan_scan"
+            android:textColor="@color/white"
+            android:text="@string/scan_scan"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_18"
+            android:layout_marginLeft="@dimen/height_15"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--我的二维码-->
+    <LinearLayout
+        android:id="@+id/ll_my_code"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/height_15"
+        android:layout_marginRight="@dimen/height_15"
+        android:padding="@dimen/height_5"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_my_qrcode"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_my_code"
+            android:contentDescription="" />
+        <TextView
+            android:id="@+id/tv_my_qrcode"
+            android:textColor="@color/white"
+            android:text="@string/my_qrcode"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_18"
+            android:layout_marginLeft="@dimen/height_15"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
+

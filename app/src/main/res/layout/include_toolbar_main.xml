@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data >
+        <variable
+            name="mainFragmentViewModel"
+            type="com.footprint.travel.viewmodel.MainFragmentViewModel">
+        </variable>
+    </data>
+<RelativeLayout
+    android:background="@null"
+    android:layout_width="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:drawableLeft="@drawable/ic_location"
+        android:drawablePadding="@dimen/height_5"
+        android:layout_centerVertical="true"
+        android:text="郑州"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_toRightOf="@id/tv_location"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/height_5"
+        android:layout_marginLeft="@dimen/height_20"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_item_transparent">
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/height_5"
+            android:src="@drawable/ic_search" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_toRightOf="@id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/height_2"
+            android:layout_height="wrap_content"
+            android:text="搜索话题、问题或人"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</layout>

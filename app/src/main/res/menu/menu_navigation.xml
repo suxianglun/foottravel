@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/item_home_page" android:icon="@drawable/main_home"  android:checked="true" android:title="@string/home_page"></item>
+  <item android:id="@+id/item_main_financing"  android:icon="@drawable/main_navigation" android:title="@string/navigation"></item>
+  <item android:id="@+id/item_friend" android:icon="@drawable/main_collect"  android:title="@string/special_service"></item>
+  <item android:id="@+id/item_mine"  android:icon="@drawable/main_mine"  android:title="@string/mine" ></item>
+</menu>

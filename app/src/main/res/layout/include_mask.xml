@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data >
+        <variable
+            name="mainFragmentViewModel"
+            type="com.footprint.travel.viewmodel.MainFragmentViewModel">
+        </variable>
+    </data>
+<RelativeLayout
+    android:id="@+id/rl_mask"
+    android:layout_width="match_parent"
+    android:background="@color/mask"
+    android:descendantFocusability="blocksDescendants"
+    android:visibility="gone"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_write"
+            android:orientation="horizontal"
+            android:layout_above="@+id/ll_answer"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_write"
+                android:text="写文章"
+                android:padding="@dimen/height_2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_14"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_menu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_write"
+                android:background="@drawable/bg_menu_ic"
+                android:padding="@dimen/height_5"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_endorse"
+                android:layout_marginLeft="@dimen/height_10"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_answer"
+            android:orientation="horizontal"
+            android:layout_above="@+id/ll_question"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/answer"
+                android:textColor="@color/white"
+                android:text="回答"
+                android:gravity="center"
+                android:padding="@dimen/height_2"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_14"
+                android:background="@drawable/bg_menu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_answer"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_list"
+                android:background="@drawable/bg_menu_ic"
+                android:padding="@dimen/height_5"
+                android:layout_marginLeft="@dimen/height_10"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_question"
+            android:orientation="horizontal"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_question"
+                android:text="提问"
+                android:gravity="center"
+                android:padding="@dimen/height_2"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_14"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_menu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_question"
+                android:src="@drawable/ic_list"
+                android:background="@drawable/bg_menu_ic"
+                android:padding="@dimen/height_5"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/height_10"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+</RelativeLayout>
+</layout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#26B048</color>
+    <!--基本颜色-->
+    <color name="app_color">#2C3F50</color>
+    <color name="green_them">#26B048</color>
+    <color name="line_color">#e1e1e1</color>
+    <!--灰色-->
+    <color name="black">#000000</color>
+    <color name="gray_22">#222222</color>
+    <color name="gray_33">#333333</color>
+    <color name="gray_66">#666666</color>
+    <color name="gray_99">#999999</color>
+    <color name="gray_d7">#d7d7d7</color>
+    <color name="gray_f3f5f7">#f3f5f7</color>
+    <color name="gray_f8">#f8f8f8</color>
+    <color name="grey400">#bdbdbd</color>
+    <color name="black_444444">#444444</color>
+    <!--字体颜色-->
+    <color name="text_normal">#999999</color>
+    <color name="text_impotent">#222222</color>
+    <!--内容区域背景颜色-->
+    <color name="bg_content">#f3f5f7</color>
+    <!--分割线颜色-->
+    <color name="bg_line">#d7d7d7</color>
+
+
+
+
+    <color name="gray_ce">#CECECE</color>
+    <color name="gray_cb">#CBCBCB</color>
+    <color name="gray_7b">#7B7B7B</color>
+    <color name="gray_7f">#7F7F7F</color>
+    <!--白色-->
+    <color name="white">#FFFFFF</color>
+    <color name="mask">#FFFF</color>
+    <color name="mask2">#BFFFFFFF</color>
+    <color name="transparent_toolbar">#57FFFFFF</color>
+    <!--蓝色-->
+    <color name="blue1">#4D7C9D</color>
+    <color name="blue2">#3697DB</color>
+    <color name="blue3">#027AFA</color>
+    <color name="blue4">#304c65</color>
+    <!--红色-->
+    <color name="red1">#D0021B</color>
+    <color name="red2">#D63F2C</color>
+    <!--黄色-->
+    <color name="yellow1">#FFF7AF</color>
+    <color name="yellow2">#FFF859</color>
+    <color name="yellow">#EFDA4D</color>
+    <color name="yellow4">#FF831F</color>
+    <color name="yellow3">#E0B078</color>
+    <!--二维码-->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="viewfinder_mask2">#3F000000</color>
+
+
+
+
+
+
+
+</resources>
