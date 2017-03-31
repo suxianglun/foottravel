@@ -261,4 +261,28 @@ public class SPUtils {
         }
         return isFirst;
     }
+
+
+    /**
+     * 是否登录过
+     *
+     * @param isLogined true:首次进入 false 非首次进入
+     */
+    public void setLogined(boolean isLogined) {
+        try {
+            sharedPreferences.edit().putBoolean("is_login", isLogined).commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public boolean isLogined() {
+        boolean isLogined = false;
+        try {
+            isLogined = sharedPreferences.getBoolean("is_login", true);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return isLogined;
+    }
 }

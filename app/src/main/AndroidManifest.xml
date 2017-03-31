@@ -47,7 +47,7 @@
         android:theme="@style/AppTheme">
         <activity android:name="com.footprint.travel.activity.SplashScreenActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppSplash"
+            android:theme="@style/LaunchTheme"
             android:windowSoftInputMode="adjustPan|stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

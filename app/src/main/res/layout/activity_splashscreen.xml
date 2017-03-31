@@ -2,5 +2,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <ImageView
+        android:id="@+id/iv_entrance"
+        android:src="@mipmap/welcome"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textColor="@color/green_them"
+        android:textSize="@dimen/text_20"
+        android:layout_marginBottom="100dp"
+        android:text="千里之行，始于足下"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </RelativeLayout>

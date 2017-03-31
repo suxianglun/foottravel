@@ -140,7 +140,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         };
 
         int[] colors = new int[]{
-                getResources().getColor(R.color.blue5),
+                getResources().getColor(R.color.white),
                 getResources().getColor(R.color.yellow)
         };
         ColorStateList csl = new ColorStateList(states, colors);

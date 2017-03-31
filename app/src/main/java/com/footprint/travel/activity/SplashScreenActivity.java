@@ -9,14 +9,19 @@ import android.os.Build;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 import com.footprint.travel.R;
 import com.footprint.travel.base.BaseActivity;
 import com.footprint.travel.utils.DialogUtils;
 import com.footprint.travel.utils.LogUtil;
 import com.footprint.travel.utils.PermissionsUtil;
+import com.footprint.travel.utils.SPUtils;
 
 import java.util.List;
+import java.util.Random;
 
 /**
  * @标题: SplashScreenActivity.java
@@ -25,8 +30,21 @@ import java.util.List;
  * @日期: 2016/11/10 @版本：
  */
 public class SplashScreenActivity extends BaseActivity {
-    SplashScreenActivity activity;
-    String [] permissions;
+
+    private SplashScreenActivity activity;
+
+    private String [] permissions;
+    /**
+     * 定义三个切换动画
+     */
+    private Animation mFadeIn;
+
+    private Animation mFadeOut;
+
+    private Animation mFadeInScale;
+
+    private ImageView mImageView;
+
     public static final int REQUEST_PERMISSION_SETTING = 0x002;
 
     @Override
@@ -40,16 +58,20 @@ public class SplashScreenActivity extends BaseActivity {
     }
     @Override
     protected void initView() {
-
+        mImageView= (ImageView) findViewById(R.id.iv_entrance);
+        randomSelectImage();
     }
-
+    private void randomSelectImage(){
+        int type=new Random().nextInt(2);
+        mImageView.setImageResource(type==1? R.mipmap.welcome:R.mipmap.welcome);
+    }
     public void checkAndRequestCameraPermission() {
         permissions=new String[]{Manifest.permission.CAMERA};
         PermissionsUtil.setNeedRequestPermissions(permissions);
         PermissionsUtil.checkAndRequestPermissions(activity, new PermissionsUtil.PermissionsCallback() {
             @Override
             public void onPermissionsGranted() {
-                startMainActivity();
+                startAnimAndToNextActivity();
             }
 
             @Override
@@ -58,20 +80,91 @@ public class SplashScreenActivity extends BaseActivity {
             }
         });
     }
+    /**
+     * 开启动画并进入下一页
+     * */
+    private void startAnimAndToNextActivity() {
+        initAnimation();
+        setAnimListener();
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                try {
+//                    Thread.sleep(2000);
+//                    startActivity(new Intent(SplashScreenActivity.this,MainActivity.class));
+//                    finish();
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        }).start();
+    }
+    /**
+     * 初始化进出动画
+     * */
+    private void initAnimation() {
+        mFadeIn = AnimationUtils.loadAnimation(this, R.anim.application_fade_in);
+        mFadeIn.setDuration(500);
+        mFadeInScale = AnimationUtils.loadAnimation(this,
+                R.anim.application_fade_in_scale);
+        mFadeInScale.setDuration(2000);
+        mFadeOut = AnimationUtils.loadAnimation(this,R.anim.application_fade_out);
+        mFadeOut.setDuration(300);
+        mImageView.startAnimation(mFadeIn);
+    }
+    /**
+     * 建立监听事件
+     */
+    private void setAnimListener() {
+        mFadeIn.setAnimationListener(new Animation.AnimationListener() {
 
-    private void startMainActivity() {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(2000);
-                    startActivity(new Intent(SplashScreenActivity.this,MainActivity.class));
-                    finish();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+            public void onAnimationStart(Animation animation) {
+
             }
-        }).start();
+
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+
+            public void onAnimationEnd(Animation animation) {
+                mImageView.startAnimation(mFadeInScale);
+            }
+        });
+        mFadeInScale.setAnimationListener(new Animation.AnimationListener() {
+
+            public void onAnimationStart(Animation animation) {
+
+
+            }
+
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+
+            public void onAnimationEnd(Animation animation) {
+                mImageView.startAnimation(mFadeOut);
+            }
+        });
+        mFadeOut.setAnimationListener(new Animation.AnimationListener() {
+
+            public void onAnimationStart(Animation animation) {
+//                if (SPUtils.getInstance().isLogined()){
+//                    startActivity(new Intent(SplashScreenActivity.this,MainActivity.class));
+//                }else {
+//                    startActivity(new Intent(SplashScreenActivity.this,LoginActivity.class));
+//                }
+                startActivity(new Intent(SplashScreenActivity.this,MainActivity.class));
+                finish();
+            }
+
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+
+            public void onAnimationEnd(Animation animation) {
+
+            }
+        });
     }
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -114,7 +207,7 @@ public class SplashScreenActivity extends BaseActivity {
         if (Build.VERSION.SDK_INT >= 23) {
             checkAndRequestCameraPermission();
         }else {
-            startMainActivity();
+            startAnimAndToNextActivity();
         }
     }
 
