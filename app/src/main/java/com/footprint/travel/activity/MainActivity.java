@@ -1,6 +1,7 @@
 package com.footprint.travel.activity;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -132,6 +133,20 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
                 return false;
             }
         });
+        // 实现底部导航菜单状态改变
+        int[][] states = new int[][]{
+                new int[]{ -android.R.attr.state_checked},
+                new int[]{android.R.attr.state_checked}
+        };
+
+        int[] colors = new int[]{
+                getResources().getColor(R.color.blue5),
+                getResources().getColor(R.color.yellow)
+        };
+        ColorStateList csl = new ColorStateList(states, colors);
+
+        activityMainBinding.navigation.setItemTextColor(csl);
+        activityMainBinding.navigation.setItemIconTintList(csl);
     }
     @Override
     public void onClick(View v) {
