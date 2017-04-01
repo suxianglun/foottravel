@@ -1,4 +1,4 @@
-package com.footprint.travel.activity.Fragment;
+package com.footprint.travel.activity.fragment;
 
 import android.Manifest;
 import android.content.Context;

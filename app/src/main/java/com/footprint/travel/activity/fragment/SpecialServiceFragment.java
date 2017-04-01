@@ -1,4 +1,4 @@
-package com.footprint.travel.activity.Fragment;
+package com.footprint.travel.activity.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 
 import com.footprint.travel.R;
 import com.footprint.travel.base.BaseFragment;
-import com.footprint.travel.base.BaseLazyFragment;
 
 /**
  * @标题: SpecialServiceFragment.java

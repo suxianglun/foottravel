@@ -70,8 +70,8 @@ public class ImageSlideshow extends FrameLayout {
     }
 
     private void initAnimator() {
-        animatorToLarge = AnimatorInflater.loadAnimator(context, R.animator.scale_large);
-        animatorToSmall = AnimatorInflater.loadAnimator(context, R.animator.scale_small);
+        animatorToLarge = AnimatorInflater.loadAnimator(context, R.anim.scale_large);
+        animatorToSmall = AnimatorInflater.loadAnimator(context, R.anim.scale_small);
     }
 
     /**

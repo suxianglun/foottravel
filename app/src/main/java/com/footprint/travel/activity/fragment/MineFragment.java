@@ -1,4 +1,4 @@
-package com.footprint.travel.activity.Fragment;
+package com.footprint.travel.activity.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,7 +19,6 @@ import com.footprint.travel.R;
 import com.footprint.travel.activity.LoginActivity;
 import com.footprint.travel.activity.MainActivity;
 import com.footprint.travel.base.BaseFragment;
-import com.footprint.travel.base.BaseLazyFragment;
 import com.footprint.travel.customview.GlideCircleTransform;
 
 /**

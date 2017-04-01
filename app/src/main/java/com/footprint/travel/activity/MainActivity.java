@@ -13,10 +13,10 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.footprint.travel.R;
-import com.footprint.travel.activity.Fragment.MainFragment;
-import com.footprint.travel.activity.Fragment.MineFragment;
-import com.footprint.travel.activity.Fragment.NavigationFragment;
-import com.footprint.travel.activity.Fragment.SpecialServiceFragment;
+import com.footprint.travel.activity.fragment.MainFragment;
+import com.footprint.travel.activity.fragment.MineFragment;
+import com.footprint.travel.activity.fragment.NavigationFragment;
+import com.footprint.travel.activity.fragment.SpecialServiceFragment;
 import com.footprint.travel.adapter.MainViewPageAdapter;
 import com.footprint.travel.base.BaseActivity;
 import com.footprint.travel.base.BaseFragment;
